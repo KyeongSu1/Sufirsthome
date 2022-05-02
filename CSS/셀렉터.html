@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀럭터 만들기</title>
+    
+    
+    <style>
+        ul>li{
+            color: blue;
+        }
+
+        ul strong{
+            color: red;
+        }
+        
+        div>strong{
+            background-color: yellow;
+        }
+        li:hover{
+            background-color: green;
+        }
+        li:active{
+            background-color: blueviolet;
+        }
+        div{
+            border-color: red;
+            border-width: 5px;
+            border-style: solid;
+            display: block;
+        }
+        span{
+            border: blue 5px solid;
+        }
+    </style>
+        
+        
+//
+    style
+      h3,li{
+            color: brown;
+        }
+        
+        .list{
+            color: aqua;
+        }
+        #id_list{
+            color: blueviolet;
+        }
+    </>
+ 
+//h3,li도 똑같이 적용한다.
+// .list 을 찍으면 같은반을 해당한다.(class쓰고 반이름은 자유)
+// 같은 클레스중에서도 다른색을 나타내고 싶으면 id를 줘서 적용 #id list
+   (id = 유일하게 존재)
+// hr = 구분선     
+// li:hover = 마우스를 가져다 되면 컬러변경
+// li:active = 마우스를 클릭하면 적용된 컬러로 변경
+//ul 부모
+//li 자식 +  동그라미 표시  
+</head>
+<body>
+    <h3>Web Programming</h3>
+    <hr />
+    <div>2학기 <strong>학습 내용</strong></div>
+    <ul>
+    <li class="list" id="id_list">HTML5</li>
+    <li class="list"><strong>CSS</strong></li>
+    <li>JAVASCRIPT</li>
+    </ul>
+    <p style="color: lightskyblue;">60점 이하는 F!</p>
+
+    <h4>블록형과 라인형의 차이</h4>
+    <div>블록형은 전체공간을 차지합니다.</div>블록형은 전체공간을 차지
+    <span>라인형은 자신의 크기만 차지합니다.</span>라인형은 자신만 차지
+</body>
+</html>

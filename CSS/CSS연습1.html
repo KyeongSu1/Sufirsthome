@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>첫번째 css적용</title>
+    <link rel="stylesheet" href="1.css"> //링크적용하는법
+    
+    <style>
+        @import ur(1.css); //스타일 안에서 인포트(링크) 적용방법
+        body{
+            background-color: mistyrose;
+        }
+        h3{
+            color: blueviolet;
+        }
+        hr{
+            border-color: yellowgreen;
+            border: width 5px;
+            border-style: solid;
+
+            border: yellowgreen 5px solid; // 한줄로 적용 가능(한칸 띄고)
+        }
+        span{
+            background-color: yellow;
+            color: blue;
+            font-size: 20px;
+
+            background-color: yellow blue 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS 스타일 맛보기</h3>
+    <hr />
+    <p>나는 <span>웹 프로그래밍</span>을 좋아합니다.</p>
+</body>
+</html>
