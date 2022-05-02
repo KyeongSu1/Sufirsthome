@@ -1,0 +1,22 @@
+<style>
+        body{
+            background-color: mistyrose;
+        }
+        h3{
+            color: blueviolet;
+        }
+        hr{
+            border-color: yellowgreen;
+            border: width 5px;
+            border-style: solid;
+
+            border: yellowgreen 5px solid; // 한줄로 적용 가능(한칸 띄고)
+        }
+        span{
+            background-color: yellow;
+            color: blue;
+            font-size: 20px;
+            
+            background-color: yellow blue 20px;
+        }
+    </style>
