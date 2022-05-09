@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트연습</title>
+</head>
+<style>
+   p{
+    background-color: aliceblue; 
+    color: brown;
+    font-size:  10px;
+    font-family: "Lucida console"; 
+    font-weight: 100; /* 색의 굵기를 나타냄 */
+   }
+
+   span{
+    color: brown;
+    font-size:  15px;
+    text-decoration: underline;
+    display: block;  /* 블록,인라인으로 임의로 바꿀수 있다. */
+    
+   }
+   li{
+       color: blue;
+       border-color: green;
+       border-style: solid;
+       border-width: 1px;
+       /*border: green solid 1px;
+       display: inline;  << 이런식으로 줄여서 사용가능*/ 
+
+       
+   }
+   .green{
+       color: green;
+   }
+   #hgreen{
+       color: red;
+   }
+   li:hover{
+            color: gray;
+    }
+    li:active{
+        background-color: blueviolet;
+    }
+</style>
+
+<h3>텍스트와 폰트</h3>
+<hr />
+
+<p>AliceBlue 바탕색에 Brown 색의 "Lucida console" 폰트로 10px 크기이고 <span>저는 이보다 1.5배 큽니다.</span></p>
+<ul>
+    <li class="green">css</li>
+    <li class="green" id="hgreen">html</li>
+    <li>JAVASCRIPT</li>
+</ul>
+
+</body>
+</html>
