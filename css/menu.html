@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피메뉴</title>
+    <style>
+        ul{ /* 부모 */
+            background-color: goldenrod;
+            padding: 10px 10px 10px 50px;  /*위 오른쪽 아래 왼쪽 */
+            list-style-type: square; /* 마커를 다른모양으로 변경 */
+            list-style-position: inside; /* 마커를 안쪽에 넣어라 */
+            list-style-image: url("../image/마커.png"); /* 마커대신 이미지로 넣는법 */
+        }
+
+        ul li{ /* ul의 자식 (ul > li) <<도 같은뜻 */
+            background-color: greenyellow;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>커피메뉴</h3>
+    <hr>
+    <ul>
+        <li>Espresso</li>
+        <li>Cappuccino</li>
+        <li>Cafe Latte</li>
+    </ul>
+</body>
+</html>
