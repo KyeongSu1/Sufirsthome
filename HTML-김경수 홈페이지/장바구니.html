@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td><img src="../image/바지.PNG" width="300"  height="150"> 결제금액 : 20000</td>
+        </tr>
+    </table>
+    
+<form action="login.php" method="get">
+<table border="1">
+    <tr> <td colspan="2"> <h2>장바구니</h2></td>   </tr>
+    <tr> <td>주소:</td> <td><input type"text" name="주소" /> </td></tr>
+    <tr> <td>전화번호:</td> <td><input type="text" name="전화번호" /> </td></tr>
+    <tr> <td>요청사항:</td> <td><input type="password" name="요청사항" /></td></tr>
+    <tr> <td>결제수단:</td> <td><input type="text" list="수단" name="결제수단">  </td></tr>
+    <datalist id="수단">
+        <option value="카드결제" />
+        <option value="계좌이체" />
+        <option value="카카오페이" />
+    </datalist>
+    <tr> <td colspan="2" style="text-align: center;"><input type="submit"  value="결제하기">  <input type="submit"  value="결제취소"></td></tr>
+</form>
+</body>
+</html>

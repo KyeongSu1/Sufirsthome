@@ -6,51 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>개인홈페이지 만들기</title>
     <style>
-        h1{
-            background-color: black;
-            color: white;            
+        body{
+            background-color: whitesmoke;
+        }
+        #tform{
+            height: 100px;
+            font-size: 100px;
+            width: 1800px;
+            text-align: center;            
         }
 
-        samp{
-            text-align: center; 
+        #search{
+            width: 1000px;
+        }
+
+        #하단{
+            font-size: 20px;
+            color: black;
+            background-color: wheat;
+            border-style: solid;
+            width: 1800px;
+            height: 100px;
+        }
+
+        #기업{
+            font-size: 50px;
+            text-align: justify;
+            color: saddlebrown;
         }
 
         ul{
             background-color: olive;
-            color: black;
+            border:1px solid black;
         }
         ul li{
             display: inline-block;
             width: 100px;            
         }
+        a{
+            text-decoration: none;
+            color: black;
+            width: 100px;     
+        }
+
+    @keyframes tcolor{
+        0% { color : black;} 
+    	25% { color : red;} 
+		50% { color : green;}
+        75% { color : black;}  
+		100% { color : blue;} 
+	}
+
+	#tform {
+    	animation-name : tcolor;	
+		animation-duration : 3s; 							
+		animation-iteration-count : infinite; 
+	}
+
+    @keyframes bomb {
+		0%{font-size : 500%;}
+        50%{font-size : 300%;}
+		100%{font-size : 100%;}
+	}
+
+	#bomb{
+		animation-name : bomb;	
+		animation-duration : 3s;
+        animation-iteration-count : infinite; 							 
+    }
 
     </style>
 </head>
 <body>
-    <h1>멋쟁이 쇼핑몰 <samp><input  type="text" placeholder="검색어를 입력해주세요."></samp> </h1>
+    <span id="tform"> <strong>멋쟁이 쇼핑몰<strong></strong></span>
+    <br>
+    <form action="login.php" method="get">
+    <span id="search"> <input  type="text" placeholder="검색어를 입력해주세요."></span>
+    </form>
     <hr>
+    
+
 
     <ul>
-        <li> <a href="1">회원가입</li>
-        <li> <a href="2">로그인</li>
-        <li> <a href="3">장바구니</li>
-        <li> <a href="4">주문내역</li>
-        <li> <a href="5">F.A.Q</li>
+        <li> <a href="홈페이지.html">홈</li>
+        <li> <a href="회원가입.html">회원가입</li> 
+        <li> <a href="로그인.html">로그인</div></li>
+        <li> <a href="장바구니.html">장바구니</li>
+        <li> <a href="주문내역.html">주문내역</li>
+        <li> <a href="FAQ.html">F.A.Q</li>
+        <li> <a href="이벤트.html">이벤트</li>
     </ul>
 
-    <table>  
-    <td>홈</td>
-    <td>BEST</td>
-    <td>신상품</td>
-    <td>랭킹</td>
-    <td>브랜드</td>
-    <td>이벤트</td>
-    </table>   
 
-    <table>
-    <tr><td>주소 : 전주시 완산구 평화동 123번지</td><td>대표 : 김경수</td><td>사업자번호 : 12-3456-789</td></tr>
-    <tr><td>FAX : 063-123-456</td> <td>고객센터 : 063-123-4567</td> <td>이메일 : KKS@naver.com</td></tr>
-    <tr><td>KKS글로벌선진기업</td></tr>
+    <thead>
+        <tr>
+            <td><h4>BEST</h4></td>
+            <td><img src="../image/1.JPG" width="300"  height="150"> </td>
+            <td><img src="../image/바지.PNG" width="300"  height="150"> </td>
+            <td><img src="../image/청바지.PNG" width="300"  height="150"> </td>
+            <td><img src="../image/신발.PNG" width="300"  height="150"> </td>            
+        </tr>
+    </thead>
+
+    <thead>
+        <tr>
+            <td><h4>신상품</h4></td>
+            <td><img src="../image/2.JPG" width="300"  height="150"> </td>
+            <td><img src="../image/가디건.JPG" width="300"  height="150"> </td>
+            <td><img src="../image/점퍼.JPG" width="300"  height="150"> </td>         
+        </tr>
+    </thead>
+
+    <br>
+    <br>
+
+    <thead>
+        <tr>
+            <td><h4>랭킹</h4></td>
+            <td><img src="../image/3.jpg" width="300"  height="150"> </td>
+            <td><img src="../image/청바지.PNG" width="300"  height="150"> </td>
+            <td><img src="../image/신발.PNG" width="300"  height="150"> </td>            
+        </tr>
+    </thead>
+
+    <thead>
+        <tr>
+            <td><h4>상품</h4></td>
+            <td><img src="../image/1.jpg" width="350"  height="200"> </td>
+            <td><img src="../image/2.jpg" width="350"  height="200"> </td>
+            <td><img src="../image/3.jpg" width="350"  height="200"> </td>
+            <td><img src="../image/4.jpg" width="350"  height="200"> </td>
+            <td><img src="../image/가디건.JPG" width="350"  height="200"> </td>           
+        </tr>
+    </thead>
+
+    <thead>
+        <tr>
+            <td><img src="../image/바지.PNG" width="350"  height="200"> </td>
+            <td><img src="../image/반팔.PNG" width="350"  height="200"> </td>
+            <td><img src="../image/청바지.PNG" width="350"  height="200"> </td>
+            <td><img src="../image/점퍼.JPG" width="350"  height="200"> </td>
+            <td><img src="../image/신발.PNG" width="350"  height="200"> </td>           
+        </tr>
+    </thead>
+
+    <thead>
+        <tr>
+            <td><img src="../image/신발.JPG" width="350"  height="200"> </td>
+            <td><img src="../image/점퍼.JPG" width="350"  height="200"> </td>
+            <td><img src="../image/정장.JPG" width="350"  height="200"> </td>
+            <td><img src="../image/카라티.JPG" width="350"  height="200"> </td>
+            <td><img src="../image/반바지.JPG" width="350"  height="200"> </td>           
+        </tr>
+    </thead>
+
+    <br>
+    <br>
+    
+    <table id="하단">
+    <tr>
+        <td>주소 : 전주시 완산구 평화동 123번지</td>
+        <td>대표 : 김경수</td>
+        <td>사업자번호 : 12-3456-789</td>
+    </tr>
+    <tr>
+        <td>고객센터 : 063-123-456</td>
+        <td>이메일 : KKS@naver.com</td>
+    </tr>
+    <tr>
+        <td id="기업">KKS글로벌선진기업</td>
+    </tr>
     </table>
 </body>
 </html>
